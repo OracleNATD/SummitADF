@@ -103,10 +103,10 @@
       <list n="technologyScope">
          <string v="ADFbc"/>
          <string v="ADFbc-Modeling"/>
+         <string v="Ant"/>
          <string v="Database"/>
          <string v="EJB"/>
          <string v="Java"/>
-         <string v="SQLJ"/>
          <string v="WSDL"/>
          <string v="WSPolicy"/>
          <string v="WebServices"/>
