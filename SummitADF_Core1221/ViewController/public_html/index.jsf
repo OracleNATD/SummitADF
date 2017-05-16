@@ -13,7 +13,7 @@
               <af:region value="#{bindings.customertaskflowdefinition1.regionModel}"
                          id="r1"/>
             </af:showDetailItem>
-            <af:showDetailItem text="Inventory Control" id="sdi3">
+            <af:showDetailItem text="Inventory Control for Demo" id="sdi3">
               <af:region value="#{bindings.InventoryControlTF1.regionModel}" id="r2"/>
             </af:showDetailItem>
           </af:panelTabbed>
