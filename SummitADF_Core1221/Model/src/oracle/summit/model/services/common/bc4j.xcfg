@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
+<!---->
 <BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
    <AppModuleConfigBag ApplicationName="oracle.summit.model.services.SummitAppModule">
-      <AppModuleConfig name="SummitAppModuleLocal" DeployPlatform="LOCAL" JDBCName="summit_adf" jbo.project="oracle.summit.model.Model" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="oracle.summit.model.services.SummitAppModule">
-         <Database jbo.TypeMapEntries="Java"/>
+      <AppModuleConfig name="SummitAppModuleLocal" DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="oracle.summit.model.services.SummitAppModule">
+         <Database jbo.TypeMapEntries="Java" JDBCDataSource="java:comp/env/jdbc/summit_adfDS"/>
          <Security AppModuleJndiName="oracle.summit.model.services.SummitAppModule"/>
       </AppModuleConfig>
       <AppModuleConfig name="SummitAppModuleShared" DeployPlatform="LOCAL" JDBCName="summit_adf" jbo.project="oracle.summit.model.Model" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="oracle.summit.model.services.SummitAppModule">
@@ -12,8 +13,8 @@
       </AppModuleConfig>
    </AppModuleConfigBag>
    <AppModuleConfigBag ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule">
-      <AppModuleConfig name="CustomerSelfServiceLocal" jbo.project="oracle.summit.model.Model" ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule" DeployPlatform="LOCAL" JDBCName="summit_adf">
-         <Database jbo.TypeMapEntries="Java"/>
+      <AppModuleConfig name="CustomerSelfServiceLocal" jbo.project="oracle.summit.model.Model" ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="Java" JDBCDataSource="java:comp/env/jdbc/summit_adfDS"/>
          <Security AppModuleJndiName="oracle.summit.model.services.CustomerSelfServiceAppModule"/>
       </AppModuleConfig>
       <AppModuleConfig name="CustomerSelfServiceShared" jbo.project="oracle.summit.model.Model" ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule" DeployPlatform="LOCAL" JDBCName="summit_adf">
@@ -23,8 +24,8 @@
       </AppModuleConfig>
    </AppModuleConfigBag>
    <AppModuleConfigBag ApplicationName="oracle.summit.model.services.BackOfficeAppModule">
-      <AppModuleConfig name="BackOfficeAppModuleLocal" jbo.project="oracle.summit.model.Model" ApplicationName="oracle.summit.model.services.BackOfficeAppModule" DeployPlatform="LOCAL" JDBCName="summit_adf">
-         <Database jbo.TypeMapEntries="Java"/>
+      <AppModuleConfig name="BackOfficeAppModuleLocal" jbo.project="oracle.summit.model.Model" ApplicationName="oracle.summit.model.services.BackOfficeAppModule" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="Java" JDBCDataSource="java:comp/env/jdbc/summit_adfDS"/>
          <Security AppModuleJndiName="oracle.summit.model.services.BackOfficeAppModule"/>
       </AppModuleConfig>
       <AppModuleConfig name="BackOfficeAppModuleShared" jbo.project="oracle.summit.model.Model" ApplicationName="oracle.summit.model.services.BackOfficeAppModule" DeployPlatform="LOCAL" JDBCName="summit_adf">
