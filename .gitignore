@@ -40,4 +40,8 @@ Thumbs.db
 #########
 .data
 SummitADF_Core1221/Model/classes/
+SummitADF_Core1221/ViewController/classes/
+SummitADF_Core1221/ViewController/deploy/
+SummitADF_Core1221/deploy/
+
 
